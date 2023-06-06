@@ -9,7 +9,7 @@ type FilterGroupProps = {
 
 const FilterGroup = ({ category, handleTagClick }: FilterGroupProps) => {
   return (
-    <div className="py-4 flex flex-row space-x-2 items-center justify-center">
+    <div className="py-4 flex flex-row space-x-2 items-center overflow-x-auto">
       {tags.map((tag) => {
         // Capitalize the first letter
         const capitalizedTag = tag.charAt(0).toUpperCase() + tag.slice(1);
@@ -22,7 +22,7 @@ const FilterGroup = ({ category, handleTagClick }: FilterGroupProps) => {
             key={tag}
             className={`${
               tag === category ? "bg-gray-500 text-white" : "bg-gray-200"
-            } rounded-lg px-4 py-2`}
+            } rounded-lg px-4 py-2 hover:bg-gray-300 whitespace-nowrap flex-shrink-0`}
             onClick={() => handleTagClick(tag)}
           >
             {formattedTag}

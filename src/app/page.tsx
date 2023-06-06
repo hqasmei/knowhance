@@ -12,9 +12,7 @@ export default function Home() {
           <h1 className="text-2xl font-semibold">Knowhance</h1>
         </div>
 
-        <div className="mx-auto max-w-5xl w-full ">
-          <PeopleGrid />
-        </div>
+        <PeopleGrid />
       </section>
     </main>
   );
