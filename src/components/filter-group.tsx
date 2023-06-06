@@ -1,16 +1,20 @@
 import React from "react";
 
-import { tags } from "@/utils/constants";
+import { people } from "@/utils/constants";
 
 type FilterGroupProps = {
   category: string;
   handleTagClick: (tag: string) => void;
 };
 
+const uniqueTags: string[] = Array.from(
+  new Set<string>(people.flatMap((person) => person.tags))
+);
+
 const FilterGroup = ({ category, handleTagClick }: FilterGroupProps) => {
   return (
-    <div className="py-4 flex flex-row space-x-2 items-center overflow-x-auto">
-      {tags.map((tag) => {
+    <div className="py-4 flex flex-wrap items-center justify-center overflow-x-auto">
+      {uniqueTags.map((tag) => {
         // Capitalize the first letter
         const capitalizedTag = tag.charAt(0).toUpperCase() + tag.slice(1);
 
@@ -22,7 +26,7 @@ const FilterGroup = ({ category, handleTagClick }: FilterGroupProps) => {
             key={tag}
             className={`${
               tag === category ? "bg-gray-500 text-white" : "bg-gray-200"
-            } rounded-lg px-4 py-2 hover:bg-gray-300 whitespace-nowrap flex-shrink-0`}
+            } rounded-lg px-4 py-2 whitespace-nowrap flex-shrink-0 mr-2 mb-2`}
             onClick={() => handleTagClick(tag)}
           >
             {formattedTag}

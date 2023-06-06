@@ -24,7 +24,7 @@ const PeopleGrid = () => {
 
   return (
     <>
-      <div className="w-full px-6 items-center justify-center flex">
+      <div className="w-full px-6 items-center justify-center flex mx-auto md:max-w-5xl ">
         <FilterGroup category={category} handleTagClick={handleTagClick} />
       </div>
       <div className="mx-auto md:max-w-5xl w-full ">
