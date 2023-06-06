@@ -37,8 +37,8 @@ const PeopleGrid = () => {
       </div>
       <div className="pt-12 grid grid-cols-3 gap-14">
         {filteredPeople.map((item, idx) => (
-            <Link href={`/person/${item.person}`}>
-            <div key={idx} className="flex flex-col items-center">
+          <Link key={idx} href={`/person/${item.person}`}>
+            <div className="flex flex-col items-center">
               <div className="h-48 w-48 rounded-full">
                 <Image
                   src={item.image}
