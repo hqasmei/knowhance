@@ -1,10 +1,14 @@
 "use client";
 import React, { useState } from "react";
 
+import Link from "next/link";
 import Image from "next/image";
 
-import { tags, people } from "@/utils/constants";
-import Link from "next/link";
+import { people } from "@/utils/constants";
+
+import { FiArrowRight } from "react-icons/fi";
+
+import FilterGroup from "./filter-group";
 
 const PeopleGrid = () => {
   const [category, setCategory] = useState("all");
@@ -20,39 +24,40 @@ const PeopleGrid = () => {
 
   return (
     <>
-      <div className="py-4 flex flex-row space-x-2 items-center justify-center">
-        {tags.map((tag) => {
-          return (
-            <button
-              key={tag}
-              className={`${
-                tag === category ? "bg-gray-500 text-white" : "bg-gray-200"
-              } rounded-lg px-4 py-2`}
-              onClick={() => handleTagClick(tag)}
-            >
-              {tag}
-            </button>
-          );
-        })}
-      </div>
-      <div className="pt-12 grid grid-cols-3 gap-14">
-        {filteredPeople.map((item, idx) => (
-          <Link key={idx} href={`/person/${item.person}`}>
-            <div className="flex flex-col items-center">
+      <FilterGroup category={category} handleTagClick={handleTagClick} />
+
+      <div className="flex min-h-screen">
+        <div className="pt-12 grid grid-cols-3 gap-14 flex-grow">
+          {filteredPeople.map((item, idx) => (
+            <div key={idx} className="flex flex-col  items-center border rounded-xl p-4">
               <div className="h-48 w-48 rounded-full">
                 <Image
                   src={item.image}
                   alt={item.person}
                   width={200}
                   height={200}
-                  className="h-full w-full bg-center bg-cover rounded-full"
+                  className="h-full w-full bg-center bg-cover rounded-full border"
                 />
               </div>
 
-              <span className="font-medium mt-2">{item.person}</span>
+              <span className="font-medium mt-2 text-xl">{item.person}</span>
+              <span className="text-gray-600 mt-2 items-left line-clamp-2">
+                {item.description}
+              </span>
+
+              <Link
+                href={`/person/${item.id}`}
+                className="flex flex-row items-center group space-x-1 justify-end mt-2 w-full"
+              >
+                <span className="font-medium py-2">Learn More</span>
+                <FiArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Link>
             </div>
-          </Link>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
