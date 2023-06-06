@@ -26,10 +26,13 @@ const PeopleGrid = () => {
     <>
       <FilterGroup category={category} handleTagClick={handleTagClick} />
 
-      <div className="flex min-h-screen">
-        <div className="pt-12 grid grid-cols-3 gap-14 flex-grow">
+      <div className="min-h-screen px-8">
+        <div className="pt-12 grid grid-cols-1 md:grid-cols-3 gap-14">
           {filteredPeople.map((item, idx) => (
-            <div key={idx} className="flex flex-col  items-center border rounded-xl p-4">
+            <div
+              key={idx}
+              className="flex flex-col  items-center border rounded-xl p-4 shadow-lg"
+            >
               <div className="h-48 w-48 rounded-full">
                 <Image
                   src={item.image}
@@ -49,10 +52,12 @@ const PeopleGrid = () => {
                 href={`/person/${item.id}`}
                 className="flex flex-row items-center group space-x-1 justify-end mt-2 w-full"
               >
-                <span className="font-medium py-2">Learn More</span>
+                <span className="font-medium py-2 group-hover:text-gray-600">
+                  Learn More
+                </span>
                 <FiArrowRight
                   size={18}
-                  className="group-hover:translate-x-1 transition-transform"
+                  className="group-hover:text-gray-600"
                 />
               </Link>
             </div>
