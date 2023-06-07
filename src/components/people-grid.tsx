@@ -20,7 +20,7 @@ const PeopleGrid = () => {
   const filteredPeople =
     category === "all"
       ? people
-      : people.filter((person) => person.tags.includes(category));
+      : people.filter((person) => person.areasOfExpertise.includes(category));
 
   return (
     <>
@@ -38,20 +38,20 @@ const PeopleGrid = () => {
                 <div className="h-48 w-48 rounded-full">
                   <Image
                     src={item.image}
-                    alt={item.person}
+                    alt={item.name}
                     width={200}
                     height={200}
                     className="h-full w-full bg-center bg-cover rounded-full border"
                   />
                 </div>
 
-                <span className="font-medium mt-2 text-xl">{item.person}</span>
+                <span className="font-medium mt-2 text-xl">{item.name}</span>
                 <span className="text-gray-600 mt-2 items-left line-clamp-2">
-                  {item.description}
+                  {item.bio}
                 </span>
 
                 <Link
-                  href={`/person/${item.id}`}
+                  href={`/person/${item._id}`}
                   className="flex flex-row items-center group space-x-1 justify-end mt-2 w-full"
                 >
                   <span className="font-medium py-2 group-hover:text-gray-600">

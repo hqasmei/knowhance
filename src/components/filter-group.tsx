@@ -8,7 +8,7 @@ type FilterGroupProps = {
 };
 
 const uniqueTags: string[] = Array.from(
-  new Set<string>(people.flatMap((person) => person.tags))
+  new Set<string>(people.flatMap((person) => person.areasOfExpertise))
 );
 
 const FilterGroup = ({ category, handleTagClick }: FilterGroupProps) => {
