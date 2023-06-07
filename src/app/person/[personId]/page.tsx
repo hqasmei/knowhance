@@ -7,7 +7,7 @@ import { FiArrowLeft } from "react-icons/fi";
 import { people } from "@/utils/constants";
 
 const Person = ({ params }: { params: { personId: string } }) => {
-  const info = people.find((item) => item._id === params.personId);
+  const info = people.find((item) => item.id === params.personId);
   return (
     <main className="min-h-screen">
       <div className="p-8">
@@ -33,7 +33,7 @@ const Person = ({ params }: { params: { personId: string } }) => {
                 />
               </div>
 
-              <div className="flex flex-col space-y-4 md:w-1/2">
+              {/* <div className="flex flex-col space-y-4 md:w-1/2">
                 <div className="flex flex-col space-y-2">
                   <span className="text-3xl font-medium">{info.name}</span>
                   <div className="flex flex-row space-x-2">
@@ -67,7 +67,7 @@ const Person = ({ params }: { params: { personId: string } }) => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
         )}

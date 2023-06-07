@@ -1,26 +1,22 @@
 "use client";
 import React, { useState } from "react";
-
 import Link from "next/link";
 import Image from "next/image";
 
-import { people } from "@/utils/constants";
-
+import FilterGroup from "./filter-group";
 import { FiArrowRight } from "react-icons/fi";
 
-import FilterGroup from "./filter-group";
-
-const PeopleGrid = () => {
+const PeopleGrid = ({ data }: { data: any }) => {
   const [category, setCategory] = useState("all");
 
   const handleTagClick = (tag: string) => {
     setCategory(tag);
   };
 
-  const filteredPeople =
-    category === "all"
-      ? people
-      : people.filter((person) => person.areasOfExpertise.includes(category));
+  // const filteredPeople =
+  //   category === "all"
+  //     ? people
+  //     : people.filter((person) => person.areasOfExpertise.includes(category));
 
   return (
     <>
@@ -30,7 +26,7 @@ const PeopleGrid = () => {
       <div className="mx-auto md:max-w-5xl w-full ">
         <div className="min-h-screen px-8">
           <div className="pt-12 grid grid-cols-1 md:grid-cols-3 gap-14">
-            {filteredPeople.map((item, idx) => (
+            {data.map((item: any, idx: any) => (
               <div
                 key={idx}
                 className="flex flex-col  items-center border rounded-xl p-4 shadow-lg"
@@ -51,7 +47,7 @@ const PeopleGrid = () => {
                 </span>
 
                 <Link
-                  href={`/person/${item._id}`}
+                  href={`/person/${item.id}`}
                   className="flex flex-row items-center group space-x-1 justify-end mt-2 w-full"
                 >
                   <span className="font-medium py-2 group-hover:text-gray-600">
