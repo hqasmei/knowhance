@@ -14,19 +14,19 @@ export const people = [
         description:
           "A guide to applying ancient wisdom and mindfulness practices in modern life.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://thinklikeamonkbook.com/",
       },
       {
         title: "On Purpose with Jay Shetty",
         description:
           "Interviews and conversations with thought leaders, celebrities, and experts on personal growth and success.",
         medium: "Podcast",
-        url: "https://example.com/podcast",
+        url: "https://jayshetty.me/podcast/",
       },
     ],
     contactInformation: {
       website: "https://www.jayshetty.me/",
-      twitter: "@jayshettyiw",
+      twitter: "@jayshetty",
     },
   },
   {
@@ -42,21 +42,21 @@ export const people = [
         description:
           "A guide to embracing imperfections and living a wholehearted life.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://brenebrown.com/book/the-gifts-of-imperfection/",
       },
       {
         title: "The Power of Vulnerability",
         description:
           "A compelling TED Talk exploring the importance of vulnerability in human connection.",
         medium: "TED Talk",
-        url: "https://example.com/ted-talk",
+        url: "https://www.youtube.com/watch?v=iCvmsMzlF7o",
       },
       {
         title: "Unlocking Us",
         description:
           "A podcast where Brene Brown explores topics of vulnerability, courage, and empathy.",
         medium: "Podcast",
-        url: "https://example.com/podcast",
+        url: "https://brenebrown.com/podcast-show/unlocking-us/",
       },
     ],
     contactInformation: {
@@ -82,21 +82,14 @@ export const people = [
         description:
           "A guide to taking charge of your life and achieving your goals.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/gp/product/0671791540/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0671791540&linkCode=as2&tag=tw-tonyrobbins18-20&linkId=37807d93184fed8a58e6dd492210d23a",
       },
       {
         title: "Why We Do What We Do",
         description:
           "An insightful talk on the forces that drive human behavior and how to create lasting change.",
         medium: "TED Talk",
-        url: "https://example.com/ted-talk",
-      },
-      {
-        title: "Audio Program: Personal Power",
-        description:
-          "A comprehensive audio program that provides strategies for personal and professional growth.",
-        medium: "Audio Program",
-        url: "https://example.com/audio-program",
+        url: "https://www.youtube.com/watch?v=YUcjNtLFqsI",
       },
     ],
     contactInformation: {
@@ -117,21 +110,14 @@ export const people = [
         description:
           "A best-selling book that explores the power of purpose and why it is essential for personal and organizational success.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://simonsinek.com/books/start-with-why/",
       },
       {
         title: "How Great Leaders Inspire Action",
         description:
           "A popular TED Talk where Simon Sinek discusses the importance of starting with why and inspiring others to take action.",
         medium: "TED Talk",
-        url: "https://example.com/ted-talk",
-      },
-      {
-        title: "Simon Sinek's Leadership Lessons",
-        description:
-          "A podcast series where Simon Sinek shares insights and stories about leadership and provides practical advice for leaders.",
-        medium: "Podcast",
-        url: "https://example.com/podcast",
+        url: "https://www.youtube.com/watch?v=qp0HIF3SfI4",
       },
     ],
     contactInformation: {
@@ -152,21 +138,14 @@ export const people = [
         description:
           "A book that provides a simple technique to overcome hesitation and take action.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.melrobbins.com/5secondrule",
       },
       {
         title: "How to Stop Screwing Yourself Over",
         description:
           "A TEDx Talk where Mel Robbins shares insights on overcoming self-doubt and taking control of your life.",
         medium: "TED Talk",
-        url: "https://example.com/tedx-talk",
-      },
-      {
-        title: "The Mel Robbins Show",
-        description:
-          "A television talk show where Mel Robbins interviews guests and provides practical advice for personal development.",
-        medium: "TV Show",
-        url: "https://example.com/tv-show",
+        url: "https://www.youtube.com/watch?v=Lp7E973zozc",
       },
     ],
     contactInformation: {
@@ -354,8 +333,7 @@ export const people = [
         url: "https://example.com/book",
       },
       {
-        title:
-          "What Google Learned From Its Quest to Build the Perfect Team",
+        title: "What Google Learned From Its Quest to Build the Perfect Team",
         description:
           "A New York Times article discussing the research conducted by Google on team effectiveness and the importance of psychological safety.",
         medium: "Article",
@@ -390,8 +368,7 @@ export const people = [
         url: "https://example.com/ted-talk",
       },
       {
-        title:
-          "Grit: Perseverance and Passion for Long-Term Goals",
+        title: "Grit: Perseverance and Passion for Long-Term Goals",
         description:
           "A seminal research paper by Angela Duckworth on the concept of grit.",
         medium: "Research Paper",

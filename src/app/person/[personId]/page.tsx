@@ -62,7 +62,7 @@ const Person = ({ params }: { params: { personId: string } }) => {
                         </span>
                         <span className="text-xl">{item.title}</span>
                         <span>{item.description}</span>
-                        <span>{item.url}</span>
+                        <Link href={item.url} target="_blank" className="border w-[5rem] rounded-lg text-sm hover:bg-gray-50 p-2">Find here</Link>
                       </div>
                     ))}
                   </div>
