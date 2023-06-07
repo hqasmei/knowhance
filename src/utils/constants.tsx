@@ -166,21 +166,14 @@ export const people = [
         description:
           "A bestselling book that explores the importance of living in the present moment and finding spiritual enlightenment.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/Power-Now-Guide-Spiritual-Enlightenment/dp/1577314808",
       },
       {
         title: "A New Earth",
         description:
           "A transformative book that offers insights into transcending ego-based consciousness and creating a new earth of awakened beings.",
         medium: "Book",
-        url: "https://example.com/book2",
-      },
-      {
-        title: "Finding Your Life's Purpose",
-        description:
-          "A recorded lecture where Eckhart Tolle shares teachings and insights on discovering and living in alignment with your life's purpose.",
-        medium: "Audio Lecture",
-        url: "https://example.com/lecture",
+        url: "https://www.amazon.com/New-Earth-Awakening-Purpose-Selection/dp/0452289963/ref=pd_bxgy_vft_none_sccl_1/143-9504213-3008508?pd_rd_w=83aLk&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=JHVX9E29RJKTDDP7FGPB&pd_rd_wg=6nJCH&pd_rd_r=ab83d816-5d31-4cc2-ae07-a3cdaaf46a20&pd_rd_i=0452289963&psc=1",
       },
     ],
     contactInformation: {
@@ -206,21 +199,14 @@ export const people = [
         description:
           "A guide to achieving success and fulfillment through spiritual principles.",
         medium: "Book",
-        url: "https://example.com/book",
-      },
-      {
-        title: "Meditation App: Chopra Meditation",
-        description:
-          "A mobile app offering guided meditations and mindfulness practices.",
-        medium: "App",
-        url: "https://example.com/app",
+        url: "https://www.amazon.com/Seven-Spiritual-Laws-Success-Fulfilling/dp/8194967473/ref=sr_1_2?crid=1YWF43Y6THQY2&keywords=The+Seven+Spiritual+Laws+of+Success&qid=1686163888&s=books&sprefix=the+seven+spiritual+laws+of+success%2Cstripbooks%2C129&sr=1-2",
       },
       {
         title: "The Deepak Chopra Podcast",
         description:
           "A podcast where Deepak Chopra explores spirituality, consciousness, and well-being.",
         medium: "Podcast",
-        url: "https://example.com/podcast",
+        url: "https://www.deepakchopra.com/podcast/",
       },
     ],
     contactInformation: {
@@ -246,21 +232,14 @@ export const people = [
         description:
           "A book that examines the factors contributing to high levels of success and explores the notion of outliers.",
         medium: "Book",
-        url: "https://example.com/outliers",
+        url: "https://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930",
       },
       {
         title: "The Tipping Point: How Little Things Can Make a Big Difference",
         description:
           "A book that explores how ideas, trends, and behaviors spread and reach a tipping point.",
         medium: "Book",
-        url: "https://example.com/tipping-point",
-      },
-      {
-        title: "Revisionist History",
-        description:
-          "A podcast where Malcolm Gladwell reexamines past events and ideas to offer fresh perspectives.",
-        medium: "Podcast",
-        url: "https://example.com/revisionist-history",
+        url: "https://www.amazon.com/Tipping-Point-Little-Things-Difference/dp/0316346624/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1686163973&sr=1-1",
       },
     ],
     contactInformation: {
@@ -281,28 +260,21 @@ export const people = [
         description:
           "A book that challenges traditional notions of motivation and explores the power of autonomy, mastery, and purpose.",
         medium: "Book",
-        url: "https://example.com/drive-book",
+        url: "https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805/ref=sr_1_3?crid=3ISWPWAO2S2FM&keywords=Drive%3A+The+Surprising+Truth+About+What+Motivates+U&qid=1686164000&s=books&sprefix=drive+the+surprising+truth+about+what+motivates+u%2Cstripbooks%2C139&sr=1-3",
       },
       {
         title: "To Sell Is Human: The Surprising Truth About Moving Others",
         description:
           "An insightful book that examines the art of persuasion and the changing landscape of sales in the modern world.",
         medium: "Book",
-        url: "https://example.com/to-sell-is-human-book",
+        url: "https://www.amazon.com/Sell-Human-Surprising-Moving-Others/dp/1594631905/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1686164021&sr=1-1",
       },
       {
         title: "The Puzzle of Motivation",
         description:
           "A thought-provoking TED Talk discussing the science behind motivation and the importance of intrinsic drive.",
         medium: "TED Talk",
-        url: "https://example.com/ted-talk",
-      },
-      {
-        title: "Masterclass: The Science of Sales and Persuasion",
-        description:
-          "An online masterclass where Daniel Pink shares insights on effective sales techniques and the psychology of persuasion.",
-        medium: "Masterclass",
-        url: "https://example.com/masterclass",
+        url: "https://www.youtube.com/watch?v=rrkrvAUbU9Y",
       },
     ],
     contactInformation: {
@@ -323,21 +295,21 @@ export const people = [
         description:
           "A groundbreaking exploration of the science behind habits and how they can be transformed to improve personal and professional life.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X",
       },
       {
         title: "Smarter Faster Better",
         description:
           "An examination of the science of productivity, highlighting the importance of motivation, goal setting, and decision-making.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/Smarter-Faster-Better-Transformative-Productivity/dp/0812983599/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1686164068&sr=1-1",
       },
       {
         title: "What Google Learned From Its Quest to Build the Perfect Team",
         description:
           "A New York Times article discussing the research conducted by Google on team effectiveness and the importance of psychological safety.",
         medium: "Article",
-        url: "https://example.com/article",
+        url: "https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html",
       },
     ],
     contactInformation: {
@@ -358,21 +330,14 @@ export const people = [
         description:
           "Explores the power of grit in achieving long-term goals and success.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111108",
       },
       {
         title: "Grit: The Power of Passion and Perseverance",
         description:
           "A TED Talk discussing the concept of grit and its impact on personal and professional achievement.",
         medium: "TED Talk",
-        url: "https://example.com/ted-talk",
-      },
-      {
-        title: "Grit: Perseverance and Passion for Long-Term Goals",
-        description:
-          "A seminal research paper by Angela Duckworth on the concept of grit.",
-        medium: "Research Paper",
-        url: "https://example.com/research-paper",
+        url: "https://www.youtube.com/watch?v=H14bBuluwB8",
       },
     ],
     contactInformation: {
@@ -394,14 +359,14 @@ export const people = [
         description:
           "A groundbreaking book that explores the key factors that differentiate exceptional companies from their peers.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996",
       },
       {
         title: "Built to Last: Successful Habits of Visionary Companies",
         description:
           "A research-based book that examines the enduring characteristics of successful companies and the leadership practices that contribute to their long-term success.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/Built-Last-Successful-Visionary-Essentials/dp/0060516402/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1686164137&sr=1-1",
       },
       {
         title:
@@ -409,14 +374,7 @@ export const people = [
         description:
           "A study of companies that have outperformed their competitors in chaotic and uncertain environments, uncovering the principles and strategies that lead to sustained success.",
         medium: "Book",
-        url: "https://example.com/book",
-      },
-      {
-        title: "Why the Mighty Fall",
-        description:
-          "A thought-provoking talk exploring the reasons behind the decline and downfall of once-great companies.",
-        medium: "TED Talk",
-        url: "https://example.com/ted-talk",
+        url: "https://www.amazon.com/Great-Choice-Uncertainty-Luck-Why-Despite/dp/0062120999/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1686164192&sr=1-1",
       },
     ],
     contactInformation: {
@@ -437,21 +395,21 @@ export const people = [
         description:
           "A groundbreaking book that addresses gender inequalities in the workplace and provides practical advice for women to achieve their career goals.",
         medium: "Book",
-        url: "https://example.com/book",
+        url: "https://www.amazon.com/Lean-Women-Work-Will-Lead/dp/0385349947",
       },
       {
         title: "Why We Have Too Few Women Leaders",
         description:
           "An insightful TED Talk where Sheryl Sandberg discusses the reasons behind the lack of women in leadership roles and suggests ways to overcome these barriers.",
         medium: "TED Talk",
-        url: "https://example.com/ted-talk",
+        url: "https://www.youtube.com/watch?v=18uDutylDa4",
       },
       {
         title: "LeanIn.Org",
         description:
           "Co-founded by Sheryl Sandberg, LeanIn.Org is an organization that provides resources and support for women to achieve their ambitions and foster gender equality.",
         medium: "Organization",
-        url: "https://example.com/leanin-org",
+        url: "https://leanin.org/",
       },
     ],
     contactInformation: {
