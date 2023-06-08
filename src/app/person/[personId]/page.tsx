@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { FiArrowLeft } from "react-icons/fi";
 
-import { people } from "@/utils/constants";
+import { people } from "@/lib/constants";
 
 const Person = ({ params }: { params: { personId: string } }) => {
   const info = people.find((item) => item._id === params.personId);

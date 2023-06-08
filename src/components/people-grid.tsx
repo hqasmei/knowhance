@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { people } from "@/utils/constants";
+import { people } from "@/lib/constants";
 
 import { FiArrowRight } from "react-icons/fi";
 

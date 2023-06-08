@@ -1,6 +1,6 @@
 import React from "react";
 
-import { people } from "@/utils/constants";
+import { people } from "@/lib/constants";
 
 type FilterGroupProps = {
   category: string;
