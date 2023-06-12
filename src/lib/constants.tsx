@@ -354,8 +354,7 @@ export const people = [
         url: "https://example.com/book",
       },
       {
-        title:
-          "What Google Learned From Its Quest to Build the Perfect Team",
+        title: "What Google Learned From Its Quest to Build the Perfect Team",
         description:
           "A New York Times article discussing the research conducted by Google on team effectiveness and the importance of psychological safety.",
         medium: "Article",
@@ -390,8 +389,7 @@ export const people = [
         url: "https://example.com/ted-talk",
       },
       {
-        title:
-          "Grit: Perseverance and Passion for Long-Term Goals",
+        title: "Grit: Perseverance and Passion for Long-Term Goals",
         description:
           "A seminal research paper by Angela Duckworth on the concept of grit.",
         medium: "Research Paper",

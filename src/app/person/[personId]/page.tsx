@@ -4,10 +4,13 @@ import Image from "next/image";
 
 import { FiArrowLeft } from "react-icons/fi";
 
-import { people } from "@/lib/constants";
+import { getAllPeople } from "@/actions/getAllPeople";
 
-const Person = ({ params }: { params: { personId: string } }) => {
-  const info = people.find((item) => item._id === params.personId);
+const Person = async ({ params }: { params: { personId: string } }) => {
+  const { people } = await getAllPeople();
+
+  const info = people.find((item) => item.id === params.personId);
+
   return (
     <main className="min-h-screen">
       <div className="p-8">
@@ -24,13 +27,15 @@ const Person = ({ params }: { params: { personId: string } }) => {
           <section className="mt-24">
             <div className="flex flex-col md:flex-row  w-full md:space-x-12 md:space-y-0 space-y-6">
               <div className="md:w-1/2 flex   h-full">
-                <Image
-                  src={info?.image}
-                  alt=""
-                  width={400}
-                  height={100}
-                  className="rounded-xl"
-                />
+                {info.image && (
+                  <Image
+                    src={info.image}
+                    alt=""
+                    width={400}
+                    height={100}
+                    className="rounded-xl"
+                  />
+                )}
               </div>
 
               <div className="flex flex-col space-y-4 md:w-1/2">
@@ -49,9 +54,9 @@ const Person = ({ params }: { params: { personId: string } }) => {
                   <span className="text-lg text-gray-600">{info.bio}</span>
                 </div>
                 <div className="flex flex-col space-y-2">
-                  <span className="text-2xl">Works</span>
+                  {/* <span className="text-2xl">Works</span> */}
 
-                  <div className="flex flex-col space-y-4">
+                  {/* <div className="flex flex-col space-y-4">
                     {info.works.map((item, idx) => (
                       <div
                         key={idx}
@@ -65,7 +70,7 @@ const Person = ({ params }: { params: { personId: string } }) => {
                         <span>{item.url}</span>
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

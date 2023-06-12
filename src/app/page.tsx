@@ -1,9 +1,13 @@
-import PeopleGrid from "@/components/people-grid";
 import Image from "next/image";
 
 import Icon from "@/public/logo.svg";
+import PeopleGrid from "@/components/people-grid";
 
-export default function Home() {
+import { getAllPeople } from "@/actions/getAllPeople";
+
+export default async function Home() {
+  const { people } = await getAllPeople();
+
   return (
     <main>
       <section className="items-center flex flex-col justify-center pt-24">
@@ -12,7 +16,7 @@ export default function Home() {
           <h1 className="text-2xl font-semibold">Knowhance</h1>
         </div>
 
-        <PeopleGrid />
+        <PeopleGrid people={people} />
       </section>
     </main>
   );
